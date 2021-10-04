@@ -3,8 +3,6 @@
 
 import numpy as np
 
-np.avrage (2)
-
 #creat variables
 list_number = []
 key = True
@@ -29,10 +27,10 @@ while key == True:
     list_number.append(number)
     print(list_number)   
     
-#Calculations of the results in the list using fuctions
+#Calculation of the results in the list using fuctions
 print("Results")
 print("The total is ", sum(list_number))
-print("The count is ", count(list_number))
-print("The average is ", mean(list_number))
+print("The count is ", len(list_number))
+print("The average is ", np.mean(list_number))
 
 
