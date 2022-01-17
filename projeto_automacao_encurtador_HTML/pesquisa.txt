@@ -1,0 +1,25 @@
+﻿Tema
+﻿Automação para localização de encurtador de links
+﻿Descrição:
+﻿Precisamos desenvolver uma automação para colocarmos o html das campanhas e nesse html precisamos reconhecer 
+todos os links que estão dentro dele e ver qual link é de um encurtador de link. Caso seja de encurtador, vamos 
+apontar para o analista de marketing que gerou a campanha e bloquear o envio.
+﻿
+﻿Critério de aceite:
+Mapeamento de padrão de encurtadores de link
+- Pelo que pesquisei, não tem um padrão geral. Aqui são alguns exemplos usando o link https://www.juntossomosmais.com.br/
+    Site de origem                                  - link encurtado
+    https://url.gratis/                             - https://url.gratis/4QOZ2o
+    https://abre.ai/                                - https://abre.ai/dqWT
+    https://www.encurtador.com.br/url-encurtada.php - encurtador.com.br/beGJ2
+    https://tinyurl.com/app/myurls                  - https://tinyurl.com/yu97rcsp
+    https://bityli.com/                             - https://bityli.com/RjPFhH
+    https://www.shorturl.at/shortener.php           - shorturl.at/przC9
+    https://free-url-shortener.rb.gy/               - https://rb.gy/zsjd1i    
+
+- O padrão que dá para buscar mesmo é o nome do site que faz o processo de encurtar o link.
+
+Criação de automação para reconhecimento do link
+- seek_and_destroy.py
+
+Criação de arquivo executável para validação do html
